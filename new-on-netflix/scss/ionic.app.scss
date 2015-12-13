@@ -19,11 +19,14 @@ $dark:                            #444 !default;
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 $positive: #58adc2 !default;
-$stable: #2d2d2d !default;
+$stable: #fff !default;
 $energized: #436d78 !default;
 $dark: #424242 !default;
 $calm: #f9fbfb !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
+@import "topTabs";
+@import "movieListItem";
+@import "movieListDivider";
 

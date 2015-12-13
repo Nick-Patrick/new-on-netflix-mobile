@@ -1,0 +1,15 @@
+.item-thumbnail-left {
+  padding-left: 92px;
+
+  h2 {
+    font-size: 1.3em;
+    font-weight: 300;
+  }
+
+  img.thumbnail-no-padding {
+    top: 0;
+    left: 0;
+    max-height: 100%;
+  }
+}
+
