@@ -1,22 +1,15 @@
-<!--
-Create tabs with an icon and label, using the tabs-positive style.
-Each tab's child <ion-nav-view> directive will have its own
-navigation history that also transitions its views in and out.
--->
-<ion-tabs class="tabs-top tabs-background-stable tabs-color-active-positive">
+<ion-tabs ng-controller="DashCtrl" class="tabs-top tabs-background-stable tabs-color-active-positive">
 
-  <!-- Dashboard Tab -->
-  <ion-tab title="Nov" href="#/tab/dash">
-    <ion-nav-view name="tab-dash"></ion-nav-view>
+  <ion-tab title="{{ previousMonth.month | limitTo: 3 }}" href="#/tab/previous">
+    <ion-nav-view name="tab-previous"></ion-nav-view>
   </ion-tab>
 
-  <ion-tab title="Dec 2015" href="#/tab/dash">
-    <ion-nav-view name="tab-dash"></ion-nav-view>
+  <ion-tab title="{{ currentMonth.month | limitTo: 3 }} {{ currentMonth.year }}" href="#/tab/current">
+    <ion-nav-view name="tab-current"></ion-nav-view>
   </ion-tab>
 
-  <ion-tab title="Jan" href="#/tab/dash">
-    <ion-nav-view name="tab-dash"></ion-nav-view>
+  <ion-tab title="{{ nextMonth.month | limitTo: 3 }}" href="#/tab/next">
+    <ion-nav-view name="tab-next"></ion-nav-view>
   </ion-tab>
-
 
 </ion-tabs>

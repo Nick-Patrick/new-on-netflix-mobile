@@ -1,11 +1,12 @@
-// Ionic Starter App
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic','ionic.service.core', 'starter.controllers', 'starter.services'])
+angular.module('newOnNetflix.services', []);
+angular.module('newOnNetflix.directives', []);
+angular.module('newOnNetflix', ['ionic', 'ionic.service.core', 'newOnNetflix.controllers', 'newOnNetflix.services', 'newOnNetflix.directives'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -14,17 +15,17 @@ angular.module('starter', ['ionic','ionic.service.core', 'starter.controllers', 
     if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
       cordova.plugins.Keyboard.disableScroll(true);
-
     }
+
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+
   });
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
-
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
   // Set up the various states which the app can be in.
@@ -40,17 +41,44 @@ angular.module('starter', ['ionic','ionic.service.core', 'starter.controllers', 
 
   // Each tab has its own nav history stack:
 
-  .state('tab.dash', {
-    url: '/dash',
+  .state('tab.previous', {
+    url: '/previous',
+    params: {
+      month: 'previous'
+    },
     views: {
-      'tab-dash': {
-        templateUrl: 'templates/tab-dash.html',
+      'tab-previous': {
+        templateUrl: 'templates/movieList.html',
+        controller: 'DashCtrl'
+      }
+    }
+  })
+  .state('tab.current', {
+    url: '/current',
+    params: {
+      month: 'current'
+    },
+    views: {
+      'tab-current': {
+        templateUrl: 'templates/movieList.html',
+        controller: 'DashCtrl'
+      }
+    }
+  })
+  .state('tab.next', {
+    url: '/next',
+    params: {
+      month: 'next'
+    },
+    views: {
+      'tab-next': {
+        templateUrl: 'templates/movieList.html',
         controller: 'DashCtrl'
       }
     }
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/tab/current');
 
 });
