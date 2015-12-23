@@ -1,8 +1,8 @@
 <div>
-  <div class="item item-divider" ng-show="thisMonth">
+  <div class="item item-divider">
   {{ thisMonth.month }} {{ day.day }}
   </div>
-  <ul>
+  <ul ng-repeat="title in day.titles">
     <title></title>
   </ul>
 </div>

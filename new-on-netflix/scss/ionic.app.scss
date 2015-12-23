@@ -24,6 +24,13 @@ $energized: #436d78 !default;
 $dark: #424242 !default;
 $calm: #f9fbfb !default;
 
+.platform-android .header-item.title {
+  transition-duration: 0ms;
+}
+.platform-android .header-item.buttons {
+  transition-duration: 0ms;
+}
+
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 @import "topTabs";

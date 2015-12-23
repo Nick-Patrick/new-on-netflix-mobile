@@ -15,6 +15,12 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
+.platform-android .header-item.title {
+  transition-duration: 0ms; }
+
+.platform-android .header-item.buttons {
+  transition-duration: 0ms; }
+
 /*!
   Ionicons, v2.0.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/

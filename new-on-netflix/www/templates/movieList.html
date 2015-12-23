@@ -6,7 +6,20 @@
   </div>
   <ion-content class="has-tabs-top">
     <div class="list" collection-repeat="day in monthsTitles.days">
-      <day day="day"></day>
+      <div>
+        <div class="item item-divider">
+          {{ thisMonth.month }} {{ day.day }}
+        </div>
+        <ul ng-repeat="title in day.titles">
+          <li class="item item-thumbnail-left" ng-show="title">
+            <img class="thumbnail-no-padding" ng-src="{{ title.coverart }}" />
+            <h2>{{ title.title }}</h2>
+            <p>{{ title.year }}</p>
+            <p>{{ title.genre }}</p>
+          </li>
+        </ul>
+      </div>
+
     </div>
   </ion-content>
 </ion-view>
