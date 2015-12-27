@@ -6,7 +6,8 @@ angular.module('newOnNetflix.controllers')
     getMonthsTitles();
 
     function getMonthsTitles () {
-      $scope.monthsTitles = netflixTitles.netflix.months[$scope.thisMonth.month.toLowerCase() + $scope.thisMonth.year];
+      console.log(netflixTitles);
+      $scope.monthsTitles = netflixTitles[$scope.thisMonth.month.toLowerCase() + $scope.thisMonth.year];
       console.log($scope.monthsTitles);
     }
 
