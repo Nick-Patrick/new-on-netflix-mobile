@@ -9752,14 +9752,15 @@ body {
   font-family: 'Lato', sans-serif; }
 
 .list {
-  background: #F9F9F9; }
+  background: #F9F9F9;
+  margin-bottom: -3px; }
 
 .item-thumbnail-left {
   padding-left: 112px;
-  margin: 10px;
+  margin: 8px 5px;
   border: 0;
   box-shadow: 0 3px 10px #D4D4D4;
-  min-height: 120px; }
+  min-height: 140px; }
   .item-thumbnail-left h2 {
     font-size: 1.1em;
     font-weight: 400;
