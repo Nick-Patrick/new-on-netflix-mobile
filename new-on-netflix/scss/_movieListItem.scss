@@ -1,15 +1,29 @@
 .item-thumbnail-left {
-  padding-left: 92px;
+  padding-left: 112px;
+  margin: 10px;
+  border: 0;
+  box-shadow: 0 3px 10px #D4D4D4;
+  min-height: 120px;
 
   h2 {
-    font-size: 1.3em;
-    font-weight: 300;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #636363;
+  }
+
+  .year {
+    color: #868686;
+  }
+
+  .genre {
+    color: #B97477;
   }
 
   img.thumbnail-no-padding {
     top: 0;
     left: 0;
     max-height: 100%;
+    max-width: 100px;
   }
 }
 

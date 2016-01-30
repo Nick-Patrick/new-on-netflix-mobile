@@ -16,13 +16,14 @@ $dark:                            #444 !default;
 */
 
 // The path for our ionicons font files, relative to the built CSS in www/css
-$ionicons-font-path: "../lib/ionic/fonts" !default;
+$ionicons-font-path: "../lib/ionic/fonts" !default
 
 $positive: #58adc2 !default;
 $stable: #fff !default;
 $energized: #436d78 !default;
-$dark: #424242 !default;
+$dark: #BE272D !default;
 $calm: #f9fbfb !default;
+$red: #BE272D !default;
 
 .platform-android .header-item.title {
   transition-duration: 0ms;
@@ -34,6 +35,7 @@ $calm: #f9fbfb !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 @import "topTabs";
+@import "movieList";
 @import "movieListItem";
 @import "movieListDivider";
 

@@ -1,3 +1,18 @@
 .tabs-top>.tabs {
-  box-shadow: 0 0 3px #A2A2A2;
+  background: $red;
+  color: white;
+  box-shadow: 0 0 1px #9C0101;
+
+  .tab-item {
+    font-weight: 600;
+  }
+}
+
+h1 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
 }

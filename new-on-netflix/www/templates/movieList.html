@@ -11,12 +11,7 @@
           {{ thisMonth.month }} {{ day.day }}
         </div>
         <ul ng-repeat="title in day.titles">
-          <li class="item item-thumbnail-left" ng-show="title">
-            <img class="thumbnail-no-padding" ng-src="{{ title.coverart }}" />
-            <h2>{{ title.title }}</h2>
-            <p>{{ title.year }}</p>
-            <p>{{ title.genre }}</p>
-          </li>
+          <ng-include src='"./templates/title.html"'></ng-include>
         </ul>
       </div>
 
