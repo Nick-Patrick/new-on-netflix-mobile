@@ -1,0 +1,37 @@
+{
+  "name": "NetflixItem",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "year": {
+      "type": "number",
+      "required": true
+    },
+    "genre": {
+      "type": "string"
+    },
+    "movie": {
+      "type": "boolean",
+      "required": true
+    },
+    "tv": {
+      "type": "boolean",
+      "required": true
+    },
+    "coverart": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
