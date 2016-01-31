@@ -1,4 +1,4 @@
-<li class="item item-thumbnail-left" ng-show="title">
+<li ng-if="title.Title" class="item item-thumbnail-left" ng-show="title">
   <img class="thumbnail-no-padding" ng-src="{{ title.Poster.length > 5 ? title.Poster : 'http://ia.media-imdb.com/images/M/MV5BMTcwMzM3NTE5NF5BMl5BanBnXkFtZTgwNjUwNDkwNzE@._V1_SX300.jpg'}}" />
   <h2>
     {{ title.Title }}
@@ -13,11 +13,11 @@
     <ul>
       <li class="imdb">
         <img src="img/imdb-logo.png" />
-        <p>{{ title.imdbRating === "N/A" ? '--' : title.imdbRating }}</p>
+        <p>{{ title.imdbRating.length > 1 && title.imdbRating !== "N/A" ? title.imdbRating : '--'}}</p>
       </li>
       <li class="metascore">
         <img class="metacritic" src="img/metacritic-logo.png" />
-        <p>{{ title.Metascore === "N/A" ? '--' : title.Metascore + '/100'}}</p>
+        <p>{{ title.Metascore.length > 1 && title.Metascore !== "N/A" ? title.Metascore + '/100' : '--'}}</p>
       </li>
     </ul>
   </div>

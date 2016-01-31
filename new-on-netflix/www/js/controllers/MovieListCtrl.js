@@ -1,5 +1,5 @@
 angular.module('newOnNetflix.controllers')
-  .controller('MovieListCtrl', function($scope, $stateParams, DateHelper, $firebaseObject, $firebaseArray) {
+  .controller('MovieListCtrl', function($scope, $stateParams, DateHelper, $firebaseObject, $firebaseArray, $location, $anchorScroll, $ionicScrollDelegate) {
     $scope.windowObject = window;
     $scope.monthsTitles = {
       days: [
@@ -46,8 +46,16 @@ angular.module('newOnNetflix.controllers')
 
     $scope.addReminder = function (title) {
       $scope.windowObject.localStorage['reminder' + title.Title] = $scope.windowObject.localStorage['reminder' + title.Title] !== 'true';
-
       console.log(title);
+    };
+
+    $scope.scrollToToday = function () {
+      var todayDate = DateHelper.getToday();
+      $location.hash('day' + todayDate);
+      var handle = $ionicScrollDelegate.$getByHandle('content');
+      handle.anchorScroll();
+
 
     }
+
   });

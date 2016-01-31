@@ -1,10 +1,11 @@
 <ion-view view-title="Dashboard">
   <div class="bar bar-header bar-dark">
     <h1 class="title">New on Netflix</h1>
+    <button class="button icon ion-calendar" ng-click="scrollToToday()"></button>
   </div>
-  <ion-content class="has-tabs-top">
+  <ion-content class="has-tabs-top" delegate-handle="content">
     <div class="list" ng-repeat="day in monthsTitles.days">
-      <div>
+      <div id="day{{ day.day }}">
         <div class="item item-divider">
           {{ thisMonth.month }} <span style="font-size: 1.2em;">{{ day.day }}</span>
         </div>

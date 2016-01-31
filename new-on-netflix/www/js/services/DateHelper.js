@@ -63,11 +63,16 @@ angular.module('newOnNetflix.services')
       return currentYear;
     }
 
+    function getToday () {
+      return new Date().getDate();
+    }
+
     return {
       getCurrentMonth: getCurrentMonth,
       getPreviousMonth: getPreviousMonth,
       getNextMonth: getNextMonth,
-      getYear: getCurrentYear
+      getYear: getCurrentYear,
+      getToday: getToday
     }
   });
 
