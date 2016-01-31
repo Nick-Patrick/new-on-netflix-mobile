@@ -1,6 +1,25 @@
 <li class="item item-thumbnail-left" ng-show="title">
-  <img class="thumbnail-no-padding" ng-src="{{ title.coverart }}" />
-  <h2>{{ title.title }}</h2>
-  <p class="year">{{ title.year }}</p>
-  <p class="genre">{{ title.genre }}</p>
+  <img class="thumbnail-no-padding" ng-src="{{ title.Poster.length > 5 ? title.Poster : 'http://ia.media-imdb.com/images/M/MV5BMTcwMzM3NTE5NF5BMl5BanBnXkFtZTgwNjUwNDkwNzE@._V1_SX300.jpg'}}" />
+  <h2>
+    {{ title.Title }}
+    <span class="season" ng-if="title.season">S{{ title.season }}</span>
+
+  </h2>
+
+  <p class="year">{{ title.Year }}</p>
+  <p class="runtime">{{ title.Runtime }}</p>
+  <p class="genre">{{ title.Genre }}</p>
+  <div class="ratings">
+    <ul>
+      <li class="imdb">
+        <img src="../img/imdb-logo.png" />
+        <p>{{ title.imdbRating === "N/A" ? '--' : title.imdbRating }}</p>
+      </li>
+      <li class="metascore">
+        <img class="metacritic" src="../img/metacritic-logo.png" />
+        <p>{{ title.Metascore === "N/A" ? '--' : title.Metascore + '/100'}}</p>
+      </li>
+    </ul>
+
+  </div>
 </li>

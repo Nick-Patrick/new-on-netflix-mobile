@@ -1,8 +1,11 @@
 angular.module('newOnNetflix.services')
 
-  .factory('Netflix', function ($http, $q) {
-
+  .factory('Netflix', function ($http, $q, $firebaseArray) {
     var netflixData;
+
+    function getFromFirebase () {
+
+    }
 
     function getAll () {
       var deferred = $q.defer();
@@ -14,7 +17,7 @@ angular.module('newOnNetflix.services')
 
       $http({
         method: 'GET',
-        url: 'https://dazzling-inferno-1134.firebaseio.com/netflix.json'
+        url: 'https://netflixtitles.firebaseio.com/netflix/months.json'
       })
         .success(function (data, status) {
           if (status === 200) {
@@ -30,7 +33,8 @@ angular.module('newOnNetflix.services')
     }
 
     return {
-      all: getAll
+      all: getAll,
+      getFromFirebase: getFromFirebase
     }
 
   });

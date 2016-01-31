@@ -5,10 +5,10 @@
     <button class="button icon ion-calendar"></button>
   </div>
   <ion-content class="has-tabs-top">
-    <div class="list" collection-repeat="day in monthsTitles.days">
+    <div class="list" ng-repeat="day in monthsTitles.days">
       <div>
         <div class="item item-divider">
-          {{ thisMonth.month }} {{ day.day }}
+          {{ thisMonth.month }} <span style="font-size: 1.2em;">{{ day.day }}</span>
         </div>
         <ul ng-repeat="title in day.titles">
           <ng-include src='"./templates/title.html"'></ng-include>
