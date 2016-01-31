@@ -7,7 +7,7 @@
 angular.module('newOnNetflix.controllers', []);
 angular.module('newOnNetflix.services', []);
 angular.module('newOnNetflix.directives', []);
-angular.module('newOnNetflix', ['ionic', 'ionic.service.core', 'newOnNetflix.controllers', 'newOnNetflix.services', 'newOnNetflix.directives'])
+angular.module('newOnNetflix', ['ionic', 'firebase', 'ionic.service.core', 'newOnNetflix.controllers', 'newOnNetflix.services', 'newOnNetflix.directives'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -50,12 +50,7 @@ angular.module('newOnNetflix', ['ionic', 'ionic.service.core', 'newOnNetflix.con
     views: {
       'tab-previous': {
         templateUrl: 'templates/movieList.html',
-        controller: 'MovieListCtrl',
-        resolve: {
-          netflixTitles: function (Netflix) {
-            return Netflix.all();
-          }
-        }
+        controller: 'MovieListCtrl'
       }
     }
   })
@@ -67,12 +62,7 @@ angular.module('newOnNetflix', ['ionic', 'ionic.service.core', 'newOnNetflix.con
     views: {
       'tab-current': {
         templateUrl: 'templates/movieList.html',
-        controller: 'MovieListCtrl',
-        resolve: {
-          netflixTitles: function (Netflix) {
-            return Netflix.all();
-          }
-        }
+        controller: 'MovieListCtrl'
       }
     }
   })
@@ -84,12 +74,7 @@ angular.module('newOnNetflix', ['ionic', 'ionic.service.core', 'newOnNetflix.con
     views: {
       'tab-next': {
         templateUrl: 'templates/movieList.html',
-        controller: 'MovieListCtrl',
-        resolve: {
-          netflixTitles: function (Netflix) {
-            return Netflix.all();
-          }
-        }
+        controller: 'MovieListCtrl'
       }
     }
   });
