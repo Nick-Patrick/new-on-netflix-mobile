@@ -1,5 +1,6 @@
 angular.module('newOnNetflix.controllers')
   .controller('MovieListCtrl', function($scope, $stateParams, DateHelper, $firebaseObject, $firebaseArray) {
+    $scope.windowObject = window;
     $scope.monthsTitles = {
       days: [
         {
@@ -18,8 +19,6 @@ angular.module('newOnNetflix.controllers')
       $scope.data.$loaded()
         .then(function () {
           $scope.monthsTitles = $scope.data;
-          //$scope.monthsTitles = $scope.data[$scope.thisMonth.month.toLowerCase() + $scope.thisMonth.year];
-          console.log('big->', $scope.monthsTitles);
         })
         .catch(function (err) {
           console.log(err);
@@ -29,15 +28,8 @@ angular.module('newOnNetflix.controllers')
         $scope.$apply(function () {
           $scope.data = snapshot.val();
           $scope.monthsTitles = $scope.data;
-          //$scope.monthsTitles = $scope.data.months[$scope.thisMonth.month.toLowerCase() + $scope.thisMonth.year];
-          console.log($scope.monthsTitles);
         });
       });
-
-
-      //console.log(netflixTitles);
-      //$scope.monthsTitles = netflixTitles[$scope.thisMonth.month.toLowerCase() + $scope.thisMonth.year];
-      //console.log($scope.monthsTitles);
     }
 
     function getViewMonth () {
@@ -50,5 +42,12 @@ angular.module('newOnNetflix.controllers')
       $scope.previousMonth = DateHelper.getPreviousMonth();
       $scope.currentMonth = DateHelper.getCurrentMonth();
       $scope.nextMonth = DateHelper.getNextMonth();
+    }
+
+    $scope.addReminder = function (title) {
+      $scope.windowObject.localStorage['reminder' + title.Title] = $scope.windowObject.localStorage['reminder' + title.Title] !== 'true';
+
+      console.log(title);
+
     }
   });

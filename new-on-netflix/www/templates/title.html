@@ -20,6 +20,7 @@
         <p>{{ title.Metascore === "N/A" ? '--' : title.Metascore + '/100'}}</p>
       </li>
     </ul>
-
   </div>
+  <a ng-click="addReminder(title)" class="button button-icon icon ion-clock remindMe"
+     ng-class="windowObject.localStorage['reminder' + title.Title] === 'true' ? 'selected' : ''"></a>
 </li>

@@ -9760,7 +9760,8 @@ body {
   margin: 8px 5px;
   border: 0;
   box-shadow: 0 3px 10px #D4D4D4;
-  min-height: 140px; }
+  min-height: 140px;
+  position: relative; }
   .item-thumbnail-left h2 {
     font-size: 1.1em;
     font-weight: 400;
@@ -9798,6 +9799,14 @@ body {
       .item-thumbnail-left .ratings img.metacritic {
         padding-top: 4px;
         height: 20px; }
+  .item-thumbnail-left .remindMe {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #806C6D;
+    padding-right: 8px; }
+    .item-thumbnail-left .remindMe.selected {
+      color: #BE272D; }
 
 .item-divider {
   background-color: #EDF0F3;
