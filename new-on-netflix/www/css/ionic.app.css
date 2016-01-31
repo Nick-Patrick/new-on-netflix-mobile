@@ -9753,7 +9753,7 @@ body {
 
 .list {
   background: #F9F9F9;
-  margin-bottom: -3px; }
+  margin-bottom: -7px; }
 
 .item-thumbnail-left {
   padding-left: 112px;
@@ -9765,8 +9765,14 @@ body {
     font-size: 1.1em;
     font-weight: 400;
     color: #636363; }
+    .item-thumbnail-left h2 span.season {
+      font-size: .7em; }
   .item-thumbnail-left .year {
     color: #868686; }
+  .item-thumbnail-left .runtime {
+    font-size: 0.8em;
+    color: #614F4F;
+    line-height: 1.5em; }
   .item-thumbnail-left .genre {
     color: #B97477; }
   .item-thumbnail-left img.thumbnail-no-padding {
@@ -9774,14 +9780,35 @@ body {
     left: 0;
     max-height: 100%;
     max-width: 100px; }
+  .item-thumbnail-left .ratings {
+    position: absolute;
+    bottom: 0;
+    font-size: 1em; }
+    .item-thumbnail-left .ratings li {
+      float: left;
+      padding-right: 9px; }
+      .item-thumbnail-left .ratings li p {
+        float: right;
+        padding-left: 6px;
+        line-height: 25px;
+        font-size: .78em; }
+    .item-thumbnail-left .ratings img {
+      height: 25px;
+      width: auto; }
+      .item-thumbnail-left .ratings img.metacritic {
+        padding-top: 4px;
+        height: 20px; }
 
 .item-divider {
   background-color: #EDF0F3;
   text-align: center;
   font-weight: 500;
-  padding-top: 4px;
-  font-size: .77em;
+  padding-top: 5px;
+  font-size: 1em;
   height: 20px;
+  font-family: Bangers, cursive;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  color: #525050;
-  box-shadow: 0 1px 4px #E4E2E2; }
+  color: #BF2E34;
+  border: 0;
+  margin-bottom: -7px; }
