@@ -9755,6 +9755,10 @@ body {
   background: #F9F9F9;
   margin-bottom: -7px; }
 
+.loading {
+  margin-top: 60% !important;
+  padding: 15px 20px !important; }
+
 .item-thumbnail-left {
   padding-left: 112px;
   margin: 8px 5px;

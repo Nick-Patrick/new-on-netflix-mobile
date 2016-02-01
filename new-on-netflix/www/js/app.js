@@ -7,7 +7,7 @@
 angular.module('newOnNetflix.controllers', []);
 angular.module('newOnNetflix.services', []);
 angular.module('newOnNetflix.directives', []);
-angular.module('newOnNetflix', ['ionic', 'firebase', 'ionic.service.core', 'newOnNetflix.controllers', 'newOnNetflix.services', 'newOnNetflix.directives'])
+angular.module('newOnNetflix', ['ionic', 'firebase', 'ngCordova', 'ionic.service.core', 'newOnNetflix.controllers', 'newOnNetflix.services', 'newOnNetflix.directives'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {

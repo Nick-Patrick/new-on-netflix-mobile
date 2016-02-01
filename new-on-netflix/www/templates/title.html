@@ -21,6 +21,6 @@
       </li>
     </ul>
   </div>
-  <a ng-click="addReminder(title)" class="button button-icon icon ion-clock remindMe"
+  <a ng-click="addReminder(title, this)" class="button button-icon icon ion-clock remindMe"
      ng-class="windowObject.localStorage['reminder' + title.Title] === 'true' ? 'selected' : ''"></a>
 </li>

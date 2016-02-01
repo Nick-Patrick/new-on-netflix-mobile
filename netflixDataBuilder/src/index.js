@@ -16,9 +16,15 @@ var app = function () {
                    snapshotDays.forEach(function (snapshotTitles) {
                        _.map(snapshotTitles.val(), function (titles) {
                            _.map(titles, function (title) {
+                               var releaseDate = {
+                                   day: snapshotTitles.val().day,
+                                   month: snapshotMonths.key()
+                               };
+                               console.log('0:', snapshotMonths.key());
+                               console.log('1: ', snapshotTitles.val());
                                if (doesDataExist(title)) return; //already got data.
                                var snapshotLocation = snapshotTitles.ref().toString();
-                               addTitleData(title, snapshotLocation, sendData);
+                               addTitleData(title, snapshotLocation, sendData, releaseDate);
                            });
                        });
                    });
@@ -32,13 +38,14 @@ var app = function () {
         return (title && title.Response && title.Response === 'True') || (title && title.Director && title.Director.length > 3);
     };
 
-    var addTitleData = function (title, snapshotLocation, callback) {
+    var addTitleData = function (title, snapshotLocation, callback, releaseDate) {
         var url = omdbApi + '&t=' + title.name + '&y=' + (title.year || '');
         httpGetAsync(url, function (response) {
             var titleResponse = JSON.parse(response);
             if (titleResponse.Error) {
                 return;
             }
+            title = _.extend(title, releaseDate);
             callback(_.extend(title, titleResponse), snapshotLocation);
         });
     };
