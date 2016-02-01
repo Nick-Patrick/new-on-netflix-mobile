@@ -4,8 +4,8 @@
     <button class="button icon ion-calendar" ng-click="scrollToToday()"></button>
   </div>
   <ion-content class="has-tabs-top" delegate-handle="content">
-    <div class="list" ng-repeat="day in monthsTitles.days">
-      <div id="day{{ day.day }}">
+    <div class="list" ng-repeat="day in monthsTitles.days track by $index">
+      <div ng-show="day.titles" id="day{{ day.day }}">
         <div class="item item-divider">
           {{ thisMonth.month }} <span style="font-size: 1.2em;">{{ day.day }}</span>
         </div>
