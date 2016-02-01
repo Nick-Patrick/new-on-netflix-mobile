@@ -1,16 +1,10 @@
 angular.module('newOnNetflix.controllers')
   .controller('MovieListCtrl', function($scope, $stateParams, DateHelper, $firebaseObject, $firebaseArray, $location, $anchorScroll, $ionicScrollDelegate) {
     $scope.windowObject = window;
-    $scope.monthsTitles = {
-      days: [
-        {
-          title: 'fetching'
-        }
-      ]
-    };
     setMonths();
     getViewMonth();
     getMonthsTitles();
+
 
     function getMonthsTitles () {
       var netflixFirebase = new Firebase('https://netflixtitles.firebaseio.com/netflix/months/' + $scope.thisMonth.month.toLowerCase() + $scope.thisMonth.year);
@@ -19,12 +13,14 @@ angular.module('newOnNetflix.controllers')
       $scope.data.$loaded()
         .then(function () {
           $scope.monthsTitles = $scope.data;
+          console.log($scope.monthsTitles);
+
         })
         .catch(function (err) {
           console.log(err);
         });
 
-      netflixFirebase.on("value", function(snapshot) {
+      netflixFirebase.orderByKey().on("value", function(snapshot) {
         $scope.$apply(function () {
           $scope.data = snapshot.val();
           $scope.monthsTitles = $scope.data;
