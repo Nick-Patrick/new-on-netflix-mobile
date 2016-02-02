@@ -50,13 +50,17 @@ angular.module('newOnNetflix.controllers')
       $scope.nextMonth = DateHelper.getNextMonth();
     }
 
-    function addLocalNotification (title) {
+    function getTitleDate (title) {
       var day = title.day;
       var monthYear = title.month;
       var month = monthYear.substring(0, title.month.length - 4);
       var monthIndex = DateHelper.getMonthIndexByName(month);
       var year = monthYear.substring(monthYear.length - 4, monthYear.length);
-      var date = new Date(parseInt(year), monthIndex - 1, day);
+      return new Date(parseInt(year), monthIndex - 1, day);
+    }
+
+    function addLocalNotification (title) {
+      var date = getTitleDate(title);
 
       $cordovaLocalNotification.isScheduled(title.Title + title.Year).then(function(isScheduled) {
         $ionicLoading.show({ template: 'Reminder set!', noBackdrop: true, duration: 1400 });
@@ -78,8 +82,14 @@ angular.module('newOnNetflix.controllers')
     }
 
     $scope.addReminder = function (title) {
-      $scope.windowObject.localStorage['reminder' + title.Title] = $scope.windowObject.localStorage['reminder' + title.Title] !== 'true';
+      var todayDate = new Date();
+      var titleReleaseDate = getTitleDate(title);
+      if (titleReleaseDate <= todayDate) {
+        $ionicLoading.show({ template: title.Title + ' is already out!', noBackdrop: true, duration: 1400 });
+        return false;
+      }
 
+      $scope.windowObject.localStorage['reminder' + title.Title] = $scope.windowObject.localStorage['reminder' + title.Title] !== 'true';
       if ($scope.windowObject.localStorage['reminder' + title.Title] === 'true') {
         addLocalNotification(title);
       }
@@ -90,8 +100,6 @@ angular.module('newOnNetflix.controllers')
       $location.hash('day' + todayDate);
       var handle = $ionicScrollDelegate.$getByHandle('content');
       handle.anchorScroll();
-
-
     }
 
   });
