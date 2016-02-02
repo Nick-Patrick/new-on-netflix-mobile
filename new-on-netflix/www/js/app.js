@@ -7,10 +7,11 @@
 angular.module('newOnNetflix.controllers', []);
 angular.module('newOnNetflix.services', []);
 angular.module('newOnNetflix.directives', []);
-angular.module('newOnNetflix', ['ionic', 'firebase', 'ngCordova', 'ionic.service.core', 'newOnNetflix.controllers', 'newOnNetflix.services', 'newOnNetflix.directives', 'ion-sticky'])
+angular.module('newOnNetflix', ['ionic','ionic.service.core', 'firebase', 'ngCordova',  'newOnNetflix.controllers', 'newOnNetflix.services', 'newOnNetflix.directives', 'ion-sticky', 'ionic.service.analytics'])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $ionicAnalytics) {
   $ionicPlatform.ready(function() {
+    $ionicAnalytics.register();
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
     if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
