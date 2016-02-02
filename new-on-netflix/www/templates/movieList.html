@@ -3,17 +3,17 @@
     <h1 class="title">New on Netflix</h1>
     <button class="button icon ion-calendar" ng-click="scrollToToday()"></button>
   </div>
-  <ion-content class="has-tabs-top" delegate-handle="content">
-    <div class="list" ng-repeat="day in monthsTitles.days track by $index">
-      <div ng-show="day.titles" id="day{{ day.day }}">
-        <div class="item item-divider">
+  <ion-content ion-sticky class="has-tabs-top" delegate-handle="content">
+    <ion-list class="list" ng-repeat="day in monthsTitles.days track by $index">
+      <div id="day{{ day.day }}">
+        <ion-item class="item item-divider">
           {{ thisMonth.month }} <span style="font-size: 1.2em;">{{ day.day }}</span>
-        </div>
+        </ion-item>
         <ul ng-repeat="title in day.titles">
           <ng-include src='"./templates/title.html"'></ng-include>
         </ul>
       </div>
 
-    </div>
+    </ion-list>
   </ion-content>
 </ion-view>

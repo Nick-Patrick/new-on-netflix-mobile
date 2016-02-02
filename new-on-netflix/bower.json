@@ -4,5 +4,8 @@
   "devDependencies": {
     "ionic": "driftyco/ionic-bower#1.2.0",
     "ionic-platform-web-client": "~0.2.1"
+  },
+  "dependencies": {
+    "ion-sticky": "~1.0.4"
   }
 }
