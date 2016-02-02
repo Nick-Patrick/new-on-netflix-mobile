@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.newonnetflix490142" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>New on Netflix - Stream Sidekick</name>
+  <name>Stream Sidekick - New on Netflix</name>
   <description>
-        An Ionic Framework and Cordova project.
+        Stream Sidekick presents our New on Netflix app. Find upcoming new shows and movies coming to Netflix as well as what's released last month. Stay up to date with everything coming to Netflix.
     </description>
-  <author email="you@example.com" href="http://example.com.com/">
-      Your Name Here
+  <author email="admin@streamsidekick.com" href="http://streamsidekick.com/">
+      Stream Sidekick
     </author>
   <content src="index.html"/>
   <access origin="*"/>

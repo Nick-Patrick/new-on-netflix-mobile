@@ -18,23 +18,30 @@ angular.module('newOnNetflix.controllers')
 
     function getMonthsTitles () {
       var netflixFirebase = new Firebase('https://netflixtitles.firebaseio.com/netflix/months/' + $scope.thisMonth.month.toLowerCase() + $scope.thisMonth.year);
-      $scope.data = $firebaseArray(netflixFirebase);
+      netflixFirebase.authAnonymously(function(error, authData) {
+        if (error) {
+          console.log("Login Failed!", error);
+        } else {
+          console.log("Authenticated successfully with payload:", authData);
+          $scope.data = $firebaseArray(netflixFirebase);
 
-      $scope.data.$loaded()
-        .then(function () {
-          $scope.monthsTitles = $scope.data;
-          console.log($scope.monthsTitles);
-          removeLoading();
-        })
-        .catch(function (err) {
-          console.log(err);
-        });
+          $scope.data.$loaded()
+            .then(function () {
+              $scope.monthsTitles = $scope.data;
+              console.log($scope.monthsTitles);
+              removeLoading();
+            })
+            .catch(function (err) {
+              console.log(err);
+            });
 
-      netflixFirebase.orderByKey().on("value", function(snapshot) {
-        $scope.$apply(function () {
-          $scope.data = snapshot.val();
-          $scope.monthsTitles = $scope.data;
-        });
+          netflixFirebase.orderByKey().on("value", function(snapshot) {
+            $scope.$apply(function () {
+              $scope.data = snapshot.val();
+              $scope.monthsTitles = $scope.data;
+            });
+          });
+        }
       });
     }
 
