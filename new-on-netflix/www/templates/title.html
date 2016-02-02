@@ -1,5 +1,5 @@
 <li ng-if="title.Title" class="item item-thumbnail-left" ng-show="title">
-  <img class="thumbnail-no-padding" ng-src="{{ title.Poster.length > 5 ? title.Poster : 'http://ia.media-imdb.com/images/M/MV5BMTcwMzM3NTE5NF5BMl5BanBnXkFtZTgwNjUwNDkwNzE@._V1_SX300.jpg'}}" />
+  <img class="thumbnail-no-padding" ng-src="{{ title.Poster.length > 5 ? title.Poster : 'img/no-image-available.jpg'}}" />
   <h2>
     {{ title.Title }}
     <span class="season" ng-if="title.season">S{{ title.season }}</span>

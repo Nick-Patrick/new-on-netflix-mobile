@@ -1,11 +1,21 @@
 angular.module('newOnNetflix.controllers')
   .controller('MovieListCtrl', function($scope, $stateParams, DateHelper, $firebaseObject, $firebaseArray, $location, $anchorScroll, $ionicScrollDelegate, $cordovaLocalNotification, $ionicLoading) {
     $scope.windowObject = window;
+    setLoading();
     setMonths();
     getViewMonth();
     getMonthsTitles();
 
-console.log($cordovaLocalNotification);
+    function setLoading () {
+      $ionicLoading.show({
+        template: 'Fetching Netflix Titles...'
+      });
+    }
+
+    function removeLoading () {
+      $ionicLoading.hide();
+    }
+
     function getMonthsTitles () {
       var netflixFirebase = new Firebase('https://netflixtitles.firebaseio.com/netflix/months/' + $scope.thisMonth.month.toLowerCase() + $scope.thisMonth.year);
       $scope.data = $firebaseArray(netflixFirebase);
@@ -14,7 +24,7 @@ console.log($cordovaLocalNotification);
         .then(function () {
           $scope.monthsTitles = $scope.data;
           console.log($scope.monthsTitles);
-
+          removeLoading();
         })
         .catch(function (err) {
           console.log(err);
@@ -41,7 +51,6 @@ console.log($cordovaLocalNotification);
     }
 
     function addLocalNotification (title) {
-      console.log(title);
       var day = title.day;
       var monthYear = title.month;
       var month = monthYear.substring(0, title.month.length - 4);
