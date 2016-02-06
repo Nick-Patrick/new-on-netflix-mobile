@@ -15,9 +15,12 @@ angular.module('newOnNetflix.controllers')
       Ionic.io();
       var user = Ionic.User.current();
       if (!user.id) {
-        user.id = Ionic.User.anonymousId() + new Date().toString();
+        user.id = Ionic.User.anonymousId() + new Date().getTime().toString();
       }
-
+      var push = new Ionic.Push({});
+      push.register(function (token) {
+        push.addTokenToUser(user);
+      });
       user.save();
     }
 
@@ -33,7 +36,6 @@ angular.module('newOnNetflix.controllers')
 
     function getMonthsTitles () {
       var localData = false;
-      console.log('thisMonth', $scope.thisMonth.month);
       if (window.localStorage && window.localStorage[$scope.thisMonth.month + 'data']) {
         localData = JSON.parse(window.localStorage[$scope.thisMonth.month + 'data']);
         $scope.data = localData;
@@ -54,7 +56,6 @@ angular.module('newOnNetflix.controllers')
             $scope.data.$loaded()
               .then(function () {
                 $scope.monthsTitles = $scope.data;
-                console.log('2. thisMonth', $scope.thisMonth.month);
                 window.localStorage[$scope.thisMonth.month + 'data'] = JSON.stringify($scope.monthsTitles);
                 removeLoading();
               })
@@ -67,7 +68,6 @@ angular.module('newOnNetflix.controllers')
             $scope.$apply(function () {
               $scope.data = snapshot.val();
               $scope.monthsTitles = $scope.data;
-              console.log('3. thisMonth', $scope.thisMonth.month);
               window.localStorage[$scope.thisMonth.month + 'data'] = JSON.stringify($scope.monthsTitles);
             });
           });
