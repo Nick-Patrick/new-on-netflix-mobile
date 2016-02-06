@@ -24,6 +24,21 @@ angular.module('newOnNetflix', ['ionic','ionic.service.core', 'firebase', 'ngCor
       StatusBar.styleDefault();
     }
 
+    var admobid = {
+      banner: 'ca-app-pub-3981028455625793/9868380111',
+      interstitial: 'ca-app-pub-3981028455625793/9728779310'
+    };
+
+    if (window.AdMob) {
+      AdMob.createBanner({
+        adId:admobid.banner,
+        position:AdMob.AD_POSITION.BOTTOM_CENTER,
+        autoShow:true
+      });
+    }
+
+    if (AdMob) AdMob.prepareInterstitial( {adId:admobid.interstitial, autoShow:false} );
+    if (AdMob) AdMob.showInterstitial();
   });
 })
 

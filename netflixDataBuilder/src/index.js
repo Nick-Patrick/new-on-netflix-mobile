@@ -5,6 +5,10 @@ var app = function () {
     var omdbApi = 'http://www.omdbapi.com/?plot=short&r=json&apikey=969a7a44';
 
     var init = function () {
+        netflix.authWithOAuthPopup("github", function(error, authData) { /* Your Code */ }, {
+            remember: "sessionOnly",
+            scope: "user,gist"
+        });
         var todayDate = getDate();
         getNetflixTitles(todayDate);
     };

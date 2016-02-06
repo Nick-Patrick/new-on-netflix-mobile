@@ -1,10 +1,25 @@
 angular.module('newOnNetflix.controllers')
   .controller('MovieListCtrl', function($scope, $stateParams, DateHelper, $firebaseObject, $firebaseArray, $location, $anchorScroll, $ionicScrollDelegate, $cordovaLocalNotification, $ionicLoading) {
+
     $scope.windowObject = window;
-    setLoading();
-    setMonths();
-    getViewMonth();
-    getMonthsTitles();
+    init();
+
+    function init () {
+      setUser();
+      setMonths();
+      getViewMonth();
+      getMonthsTitles();
+    }
+
+    function setUser () {
+      Ionic.io();
+      var user = Ionic.User.current();
+      if (!user.id) {
+        user.id = Ionic.User.anonymousId() + new Date().toString();
+      }
+
+      user.save();
+    }
 
     function setLoading () {
       $ionicLoading.show({
@@ -17,6 +32,16 @@ angular.module('newOnNetflix.controllers')
     }
 
     function getMonthsTitles () {
+      var localData = false;
+      console.log('thisMonth', $scope.thisMonth.month);
+      if (window.localStorage && window.localStorage[$scope.thisMonth.month + 'data']) {
+        localData = JSON.parse(window.localStorage[$scope.thisMonth.month + 'data']);
+        $scope.data = localData;
+        $scope.monthsTitles = localData;
+      } else {
+        setLoading();
+      }
+
       var netflixFirebase = new Firebase('https://netflixtitles.firebaseio.com/netflix/months/' + $scope.thisMonth.month.toLowerCase() + $scope.thisMonth.year);
       netflixFirebase.authAnonymously(function(error, authData) {
         if (error) {
@@ -25,20 +50,25 @@ angular.module('newOnNetflix.controllers')
           console.log("Authenticated successfully with payload:", authData);
           $scope.data = $firebaseArray(netflixFirebase);
 
-          $scope.data.$loaded()
-            .then(function () {
-              $scope.monthsTitles = $scope.data;
-              console.log($scope.monthsTitles);
-              removeLoading();
-            })
-            .catch(function (err) {
-              console.log(err);
-            });
+          if (!localData) {
+            $scope.data.$loaded()
+              .then(function () {
+                $scope.monthsTitles = $scope.data;
+                console.log('2. thisMonth', $scope.thisMonth.month);
+                window.localStorage[$scope.thisMonth.month + 'data'] = JSON.stringify($scope.monthsTitles);
+                removeLoading();
+              })
+              .catch(function (err) {
+                console.log(err);
+              });
+          }
 
           netflixFirebase.orderByKey().on("value", function(snapshot) {
             $scope.$apply(function () {
               $scope.data = snapshot.val();
               $scope.monthsTitles = $scope.data;
+              console.log('3. thisMonth', $scope.thisMonth.month);
+              window.localStorage[$scope.thisMonth.month + 'data'] = JSON.stringify($scope.monthsTitles);
             });
           });
         }
