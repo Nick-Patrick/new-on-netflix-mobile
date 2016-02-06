@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2febb802-43e0-493b-aecb-6202ba866954" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new-on-netflix/.io-config.json" afterPath="$PROJECT_DIR$/new-on-netflix/.io-config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new-on-netflix/www/js/controllers/MovieListCtrl.js" afterPath="$PROJECT_DIR$/new-on-netflix/www/js/controllers/MovieListCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new-on-netflix/www/lib/ionic-platform-web-client/dist/ionic.io.bundle.js" afterPath="$PROJECT_DIR$/new-on-netflix/www/lib/ionic-platform-web-client/dist/ionic.io.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new-on-netflix/www/lib/ionic-platform-web-client/dist/ionic.io.bundle.min.js" afterPath="$PROJECT_DIR$/new-on-netflix/www/lib/ionic-platform-web-client/dist/ionic.io.bundle.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new-on-netflix/config.xml" afterPath="$PROJECT_DIR$/new-on-netflix/config.xml" />
     </list>
     <ignored path="new-on-netflix-mobile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,21 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/new-on-netflix/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375">
-              <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.028355388">
+              <caret line="1" column="65" selection-start-line="1" selection-start-column="65" selection-end-line="1" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MovieListCtrl.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MovieListCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new-on-netflix/www/js/controllers/MovieListCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4413793">
-              <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -87,7 +84,6 @@
         <option value="$PROJECT_DIR$/new-on-netflix/www/templates/movieList.html" />
         <option value="$PROJECT_DIR$/new-on-netflix/www/lib/ion-sticky/ion-sticky.js" />
         <option value="$PROJECT_DIR$/new-on-netflix/www/templates/title.html" />
-        <option value="$PROJECT_DIR$/new-on-netflix/config.xml" />
         <option value="$PROJECT_DIR$/netflixDataBuilder/src/index.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch" />
         <option value="$PROJECT_DIR$/netflix-data/march2016.json" />
@@ -95,6 +91,7 @@
         <option value="$PROJECT_DIR$/netflix-data/february2016.json" />
         <option value="$PROJECT_DIR$/new-on-netflix/www/js/app.js" />
         <option value="$PROJECT_DIR$/new-on-netflix/www/js/controllers/MovieListCtrl.js" />
+        <option value="$PROJECT_DIR$/new-on-netflix/config.xml" />
       </list>
     </option>
   </component>
@@ -446,7 +443,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="moviectr&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/controllers/MovieListCtrl.js&#10;app.js&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/app.js&#10;config&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/config.xml&#10;title&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/title.html&#10;movielist&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/movieList.html&#10;index.html&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/index.html&#10;datehelper&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/services/DateHelper.js&#10;ionic.&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/scss/ionic.app.scss&#10;ctrl&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/controllers/MovieListCtrl.js&#10;january&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/netflix-data/january2016.json&#10;movielistctrl&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/controllers/MovieListCtrl.js&#10;scss&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/scss/_movieListItem.scss&#10;package.json&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/package.json&#10;dattab&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/controllers/DateTabsCtrl.js&#10;title.html&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/title.html&#10;title.js&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/directives/title.js&#10;day.html&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/day.html&#10;tabs.ht&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/tabs.html&#10;config.xml&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/config.xml&#10;netflix&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/services/Netflix.js&#10;app.&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/app.js&#10;index.&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/index.html&#10;.json&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/sampleMovieList.json&#10;pluginerror&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/node_modules/gulp-util/lib/PluginError.js&#10;chat&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/tab-chats.html&#10;ionic.app&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/scss/ionic.app.scss" />
+    <property name="SearchEverywhereHistoryKey" value="config.xml&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/config.xml&#10;moviectr&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/controllers/MovieListCtrl.js&#10;app.js&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/app.js&#10;config&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/config.xml&#10;title&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/title.html&#10;movielist&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/movieList.html&#10;index.html&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/index.html&#10;datehelper&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/services/DateHelper.js&#10;ionic.&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/scss/ionic.app.scss&#10;ctrl&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/controllers/MovieListCtrl.js&#10;january&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/netflix-data/january2016.json&#10;movielistctrl&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/controllers/MovieListCtrl.js&#10;scss&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/scss/_movieListItem.scss&#10;package.json&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/package.json&#10;dattab&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/controllers/DateTabsCtrl.js&#10;title.html&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/title.html&#10;title.js&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/directives/title.js&#10;day.html&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/day.html&#10;tabs.ht&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/tabs.html&#10;netflix&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/services/Netflix.js&#10;app.&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/app.js&#10;index.&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/index.html&#10;.json&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/sampleMovieList.json&#10;pluginerror&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/node_modules/gulp-util/lib/PluginError.js&#10;chat&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/tab-chats.html&#10;ionic.app&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/scss/ionic.app.scss" />
     <property name="editor.config.accepted" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="JavaScript" />
@@ -561,7 +558,13 @@
       <option name="project" value="LOCAL" />
       <updated>1454777573861</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add user setup.">
+      <created>1454779035988</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1454779035988</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -606,7 +609,8 @@
     <MESSAGE value="Fix icons on mobile.&#10;" />
     <MESSAGE value="Prevent reminders on shows already released." />
     <MESSAGE value="Add localStorage for quicker title loads. Add analytics." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add localStorage for quicker title loads. Add analytics." />
+    <MESSAGE value="Add user setup." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add user setup." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -984,18 +988,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new-on-netflix/config.xml">
+    <entry file="file://$PROJECT_DIR$/new-on-netflix/www/js/controllers/MovieListCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new-on-netflix/www/js/controllers/MovieListCtrl.js">
+    <entry file="file://$PROJECT_DIR$/new-on-netflix/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4413793">
-          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.028355388">
+          <caret line="1" column="65" selection-start-line="1" selection-start-column="65" selection-end-line="1" selection-end-column="65" />
           <folding />
         </state>
       </provider>
