@@ -137,6 +137,14 @@ angular.module('newOnNetflix.controllers')
       $location.hash('day' + todayDate);
       var handle = $ionicScrollDelegate.$getByHandle('content');
       handle.anchorScroll();
-    }
+    };
+
+    $scope.showFullTitle = function (title) {
+      $ionicLoading.show({
+        template: title,
+        noBackdrop: true,
+        duration: 2000
+      });
+    };
 
   });

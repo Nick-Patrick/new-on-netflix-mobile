@@ -1,4 +1,4 @@
-<li ng-if="title.Title" class="item item-thumbnail-left" ng-show="title">
+<li ng-if="title.Title" class="item item-thumbnail-left" on-hold="showFullTitle(title.Title)" ng-show="title">
   <img class="thumbnail-no-padding" ng-src="{{ title.Poster.length > 5 ? title.Poster : 'img/no-image-available.jpg'}}" />
   <h2>
     {{ title.Title }}
