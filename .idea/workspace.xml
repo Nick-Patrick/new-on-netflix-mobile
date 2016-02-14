@@ -4,6 +4,7 @@
     <list default="true" id="2febb802-43e0-493b-aecb-6202ba866954" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new-on-netflix/config.xml" afterPath="$PROJECT_DIR$/new-on-netflix/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new-on-netflix/www/js/controllers/MovieListCtrl.js" afterPath="$PROJECT_DIR$/new-on-netflix/www/js/controllers/MovieListCtrl.js" />
     </list>
     <ignored path="new-on-netflix-mobile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,21 +25,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/new-on-netflix/config.xml">
+      <file leaf-file-name="MovieListCtrl.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/new-on-netflix/www/js/controllers/MovieListCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.028355388">
-              <caret line="1" column="65" selection-start-line="1" selection-start-column="65" selection-end-line="1" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.35985532">
+              <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MovieListCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/new-on-netflix/www/js/controllers/MovieListCtrl.js">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/new-on-netflix/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
+            <state vertical-scroll-proportion="-4.4444447">
+              <caret line="9" column="206" selection-start-line="9" selection-start-column="183" selection-end-line="9" selection-end-column="206" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="title.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/new-on-netflix/www/templates/title.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.125">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -83,15 +94,15 @@
         <option value="$PROJECT_DIR$/new-on-netflix/www/index.html" />
         <option value="$PROJECT_DIR$/new-on-netflix/www/templates/movieList.html" />
         <option value="$PROJECT_DIR$/new-on-netflix/www/lib/ion-sticky/ion-sticky.js" />
-        <option value="$PROJECT_DIR$/new-on-netflix/www/templates/title.html" />
         <option value="$PROJECT_DIR$/netflixDataBuilder/src/index.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch" />
-        <option value="$PROJECT_DIR$/netflix-data/march2016.json" />
         <option value="$PROJECT_DIR$/netflix-data/february2016a.json" />
         <option value="$PROJECT_DIR$/netflix-data/february2016.json" />
         <option value="$PROJECT_DIR$/new-on-netflix/www/js/app.js" />
-        <option value="$PROJECT_DIR$/new-on-netflix/www/js/controllers/MovieListCtrl.js" />
+        <option value="$PROJECT_DIR$/netflix-data/march2016.json" />
+        <option value="$PROJECT_DIR$/new-on-netflix/www/templates/title.html" />
         <option value="$PROJECT_DIR$/new-on-netflix/config.xml" />
+        <option value="$PROJECT_DIR$/new-on-netflix/www/js/controllers/MovieListCtrl.js" />
       </list>
     </option>
   </component>
@@ -101,9 +112,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="737" />
     <option name="y" value="23" />
-    <option name="width" value="943" />
+    <option name="width" value="1680" />
     <option name="height" value="998" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -131,6 +141,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -397,7 +408,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="netflixDataBuilder" />
+              <option name="myItemId" value="new-on-netflix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="releases" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -411,11 +426,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="netflixDataBuilder" />
+              <option name="myItemId" value="new-on-netflix" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="platforms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -429,13 +444,110 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="netflix-data" />
+              <option name="myItemId" value="new-on-netflix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platforms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new-on-netflix-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new-on-netflix-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new-on-netflix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platforms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new-on-netflix-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new-on-netflix-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new-on-netflix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platforms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outputs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new-on-netflix-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new-on-netflix-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new-on-netflix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platforms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outputs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apk" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -443,22 +555,22 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="config.xml&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/config.xml&#10;moviectr&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/controllers/MovieListCtrl.js&#10;app.js&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/app.js&#10;config&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/config.xml&#10;title&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/title.html&#10;movielist&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/movieList.html&#10;index.html&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/index.html&#10;datehelper&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/services/DateHelper.js&#10;ionic.&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/scss/ionic.app.scss&#10;ctrl&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/controllers/MovieListCtrl.js&#10;january&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/netflix-data/january2016.json&#10;movielistctrl&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/controllers/MovieListCtrl.js&#10;scss&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/scss/_movieListItem.scss&#10;package.json&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/package.json&#10;dattab&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/controllers/DateTabsCtrl.js&#10;title.html&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/title.html&#10;title.js&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/directives/title.js&#10;day.html&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/day.html&#10;tabs.ht&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/tabs.html&#10;netflix&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/services/Netflix.js&#10;app.&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/app.js&#10;index.&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/index.html&#10;.json&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/sampleMovieList.json&#10;pluginerror&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/node_modules/gulp-util/lib/PluginError.js&#10;chat&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/tab-chats.html&#10;ionic.app&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/scss/ionic.app.scss" />
+    <property name="SearchEverywhereHistoryKey" value="app.js&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/app.js&#10;config.xml&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/config.xml&#10;title&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/title.html&#10;moviectr&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/controllers/MovieListCtrl.js&#10;config&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/config.xml&#10;movielist&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/movieList.html&#10;index.html&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/index.html&#10;datehelper&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/services/DateHelper.js&#10;ionic.&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/scss/ionic.app.scss&#10;ctrl&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/controllers/MovieListCtrl.js&#10;january&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/netflix-data/january2016.json&#10;movielistctrl&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/controllers/MovieListCtrl.js&#10;scss&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/scss/_movieListItem.scss&#10;package.json&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/package.json&#10;dattab&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/controllers/DateTabsCtrl.js&#10;title.html&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/title.html&#10;title.js&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/directives/title.js&#10;day.html&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/day.html&#10;tabs.ht&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/tabs.html&#10;netflix&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/services/Netflix.js&#10;app.&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/js/app.js&#10;index.&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/index.html&#10;.json&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/sampleMovieList.json&#10;pluginerror&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/node_modules/gulp-util/lib/PluginError.js&#10;chat&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/www/templates/tab-chats.html&#10;ionic.app&#9;FILE&#9;file:///Users/nickpatrick/Documents/PortfolioProjects/new-on-netflix-mobile/new-on-netflix/scss/ionic.app.scss" />
     <property name="editor.config.accepted" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="JavaScript" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/netflix-data" />
-      <recent name="$PROJECT_DIR$/new-on-netflix" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/new-on-netflix/releases" />
+      <recent name="$PROJECT_DIR$/new-on-netflix" />
       <recent name="$PROJECT_DIR$/new-on-netflix/www/img" />
       <recent name="$PROJECT_DIR$/new-on-netflix/www/lib" />
       <recent name="$PROJECT_DIR$/netflixDataBuilder/src/lib" />
-      <recent name="$PROJECT_DIR$/new-on-netflix/www/js/controllers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/netflix-data" />
+      <recent name="$PROJECT_DIR$/new-on-netflix" />
     </key>
   </component>
   <component name="RunManager">
@@ -564,22 +676,34 @@
       <option name="project" value="LOCAL" />
       <updated>1454779035988</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update version.">
+      <created>1454779524430</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1454779524430</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add onHold function to show full title if too long.">
+      <created>1455178590243</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1455178590243</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="737" y="23" width="943" height="998" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1680" height="998" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26748058" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15018316" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -610,7 +734,9 @@
     <MESSAGE value="Prevent reminders on shows already released." />
     <MESSAGE value="Add localStorage for quicker title loads. Add analytics." />
     <MESSAGE value="Add user setup." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add user setup." />
+    <MESSAGE value="Update version." />
+    <MESSAGE value="Add onHold function to show full title if too long." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add onHold function to show full title if too long." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -619,11 +745,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/new-on-netflix/www/js/controllers/MovieListCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/new-on-netflix/scss/_movieListItem.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="62" column="7" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -631,7 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -647,7 +779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -663,7 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -678,7 +808,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -686,7 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -694,7 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -717,7 +844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -747,7 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -826,7 +951,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,7 +981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.5">
           <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -872,7 +995,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -880,7 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -888,7 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.9166667">
           <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -896,7 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,7 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.625">
           <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -920,7 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.875">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -928,15 +1045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="68" column="44" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new-on-netflix/www/templates/title.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="1" column="115" selection-start-line="1" selection-start-column="115" selection-end-line="1" selection-end-column="115" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -944,7 +1052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -952,23 +1059,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.029296875">
           <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netflix-data/march2016.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new-on-netflix/www/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5344828">
-          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -976,7 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24280575">
           <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -984,22 +1073,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4347826">
           <caret line="157" column="28" selection-start-line="157" selection-start-column="28" selection-end-line="157" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netflix-data/march2016.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70430106">
+          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new-on-netflix/www/js/controllers/MovieListCtrl.js">
+    <entry file="file://$PROJECT_DIR$/new-on-netflix/www/templates/title.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/new-on-netflix/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.028355388">
+        <state vertical-scroll-proportion="0.026978416">
           <caret line="1" column="65" selection-start-line="1" selection-start-column="65" selection-end-line="1" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new-on-netflix/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.4444447">
+          <caret line="9" column="206" selection-start-line="9" selection-start-column="183" selection-end-line="9" selection-end-column="206" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new-on-netflix/www/js/controllers/MovieListCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35985532">
+          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
           <folding />
         </state>
       </provider>

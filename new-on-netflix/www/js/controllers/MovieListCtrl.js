@@ -1,5 +1,5 @@
 angular.module('newOnNetflix.controllers')
-  .controller('MovieListCtrl', function($scope, $stateParams, DateHelper, $firebaseObject, $firebaseArray, $location, $anchorScroll, $ionicScrollDelegate, $cordovaLocalNotification, $ionicLoading) {
+  .controller('MovieListCtrl', function($scope, $stateParams, DateHelper, $firebaseObject, $firebaseArray, $location, $anchorScroll, $ionicScrollDelegate, $cordovaLocalNotification, $ionicLoading, $ionicAnalytics) {
 
     $scope.windowObject = window;
     init();
@@ -97,6 +97,11 @@ angular.module('newOnNetflix.controllers')
     }
 
     function addLocalNotification (title) {
+      $ionicAnalytics.track('Reminder Set', {
+        item_id: 'lpdsx',
+        item_name: title.Title + ' - Reminder set.'
+      });
+
       var date = getTitleDate(title);
 
       $cordovaLocalNotification.isScheduled(title.Title + title.Year).then(function(isScheduled) {
@@ -107,7 +112,6 @@ angular.module('newOnNetflix.controllers')
           at: date,
           text: "Released on Netflix today!",
           title: title.Title,
-          autoCancel: true,
           icon: "http://streamsidekick.com/wp-content/uploads/2016/02/notificationIcon.png",
           sound: null,
           led: "BE272D"
