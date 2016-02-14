@@ -1,14 +1,14 @@
-<li ng-if="title.Title" class="item item-thumbnail-left" on-hold="showFullTitle(title.Title)" ng-show="title">
-  <img class="thumbnail-no-padding" ng-src="{{ title.Poster.length > 5 ? title.Poster : 'img/no-image-available.jpg'}}" />
-  <h2>
+<li ng-if="title.Title" class="item item-thumbnail-left"  ng-show="title">
+  <img on-tap="gotoTitle(title)" class="thumbnail-no-padding" ng-src="{{ title.Poster.length > 5 ? title.Poster : 'img/no-image-available.jpg'}}" />
+  <h2 on-tap="gotoTitle(title)" on-hold="showFullTitle(title.Title)">
     {{ title.Title }}
-    <span class="season" ng-if="title.season">S{{ title.season }}</span>
+    <span on-tap="gotoTitle(title)" class="season" ng-if="title.season">S{{ title.season }}</span>
 
   </h2>
 
-  <p class="year">{{ title.Year }}</p>
-  <p class="runtime">{{ title.Runtime }}</p>
-  <p class="genre">{{ title.Genre }}</p>
+  <p on-tap="gotoTitle(title)" class="year">{{ title.Year }}</p>
+  <p on-tap="gotoTitle(title)" class="runtime">{{ title.Runtime }}</p>
+  <p on-tap="gotoTitle(title)" class="genre">{{ title.Genre }}</p>
   <div class="ratings">
     <ul>
       <li class="imdb">
@@ -21,6 +21,6 @@
       </li>
     </ul>
   </div>
-  <a ng-click="addReminder(title, this)" class="button button-icon icon ion-clock remindMe"
+  <a ng-click="addReminder(title, this)" class="button button-large button-icon icon ion-clock remindMe"
      ng-class="windowObject.localStorage['reminder' + title.Title] === 'true' ? 'selected' : ''"></a>
 </li>

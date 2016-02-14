@@ -1,5 +1,5 @@
 angular.module('newOnNetflix.controllers')
-  .controller('MovieListCtrl', function($scope, $stateParams, DateHelper, $firebaseObject, $firebaseArray, $location, $anchorScroll, $ionicScrollDelegate, $cordovaLocalNotification, $ionicLoading, $ionicAnalytics) {
+  .controller('MovieListCtrl', function($scope, $state, $stateParams, DateHelper, $firebaseObject, $firebaseArray, $location, $anchorScroll, $ionicScrollDelegate, $cordovaLocalNotification, $ionicLoading, $ionicAnalytics) {
 
     $scope.windowObject = window;
     init();
@@ -149,6 +149,16 @@ angular.module('newOnNetflix.controllers')
         noBackdrop: true,
         duration: 2000
       });
+    };
+
+    $scope.gotoTitle = function (title) {
+      $state.go("titleDetails", {
+        "title": title
+        },
+        {
+          reload: true
+        }
+      );
     };
 
   });

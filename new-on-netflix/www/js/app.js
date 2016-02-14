@@ -93,7 +93,17 @@ angular.module('newOnNetflix', ['ionic','ionic.service.core', 'firebase', 'ngCor
         controller: 'MovieListCtrl'
       }
     }
+  })
+  .state('titleDetails', {
+    url: '/titleDetails',
+    cache: false,
+    params: {
+      title: {}
+    },
+    templateUrl: 'templates/titleDetails.html',
+    controller: 'TitleDetailsCtrl'
   });
+
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/current');

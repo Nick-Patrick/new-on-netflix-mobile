@@ -89,7 +89,8 @@ angular.module('newOnNetflix.services')
       getNextMonth: getNextMonth,
       getYear: getCurrentYear,
       getToday: getToday,
-      getMonthIndexByName: getMonthIndexByName
+      getMonthIndexByName: getMonthIndexByName,
+      getMonthAndYearByIndex: getMonthAndYearByIndex
     }
   });
 

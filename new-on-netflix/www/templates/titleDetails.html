@@ -1,0 +1,60 @@
+<ion-view view-title="TitleDetails" class="titleDetails">
+
+  <div class="bar bar-header bar-dark">
+    <button ng-click="myGoBack()" class="button icon ion-arrow-left-c"></button>
+    <h1 class="title">{{ title.Title }}</h1>
+  </div>
+
+  <ion-content class="has-header">
+    <div class="movieDetails">
+      <div class="posterArt">
+        <a>
+          <img class="poster" ng-src="{{ title.Poster.length > 5 ? title.Poster : 'img/no-image-available.jpg'}}">
+        </a>
+      </div>
+      <div class="netflixRelease">
+        <p class="onNetflix">Due On Netflix</p>
+        <p class="day">{{ title.day }}</p>
+        <p class="month">{{ monthYear.month }}</p>
+        <!--<button ng-click="addReminder(title, this)" class="button button-large icon ion-clock remindMe"
+           ng-class="windowObject.localStorage['reminder' + title.Title] === 'true' ? 'selected' : ''"></button>-->
+      </div>
+    </div>
+
+
+    <div class="description">
+
+      <div class="title">
+        <h2>{{ title.Title }}</h2>
+        <p ng-if="title.Released.length > 4"><span ng-if="title.season">Season {{title.season}} - </span>{{ title.Year | limitTo: 4 }}</p>
+      </div>
+
+      <div ng-if="title.Plot.length > 5">
+        <h3>Plot</h3>
+        <p>{{ title.Plot }}</p>
+      </div>
+
+      <div ng-if="title.Awards.length > 5">
+        <h3>Genres</h3>
+        <p>{{ title.Genre }}</p>
+      </div>
+
+      <div ng-if="title.Director.length > 4">
+        <h3>Directed by</h3>
+        <p>{{ title.Director }}</p>
+      </div>
+
+      <div ng-if="title.Actors.length > 5">
+        <h3>Cast</h3>
+        <p>{{ title.Actors }}</p>
+      </div>
+
+      <div ng-if="title.Awards.length > 5">
+        <h3>Awards</h3>
+        <p>{{ title.Awards }}</p>
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>
