@@ -1,7 +1,7 @@
 {
-  "name": "new-on-netflix",
-  "version": "1.1.1",
-  "description": "new-on-netflix: An Ionic project",
+  "name": "New on Netflix",
+  "version": "1.1.2",
+  "description": "New on Netflix - Stream Sidekick - Find out what's new on Netflix",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^2.0.4",
