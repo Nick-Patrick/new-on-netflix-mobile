@@ -1,0 +1,63 @@
+{
+  "days": {
+    "0": {
+      "day": 5,
+      "titles": {
+        "Marseille": {
+          "name": "Marseille",
+          "season": 1,
+          "year": 2016
+        }
+      }
+    },
+    "1": {
+      "day": 6,
+      "titles": {
+        "Grace and Frankie": {
+          "name": "Grace and Frankie",
+          "season": 2,
+          "year": 2016
+        }
+      }
+    },
+    "2": {
+      "day": 11,
+      "titles": {
+        "Chelsea": {
+          "name": "Chelsea",
+          "season": 1,
+          "year": 2016
+        }
+      }
+    },
+    "3": {
+      "day": 20,
+      "titles": {
+        "Lady Dynamite": {
+          "name": "Lady Dynamite",
+          "season": 1,
+          "year": 2016
+        }
+      }
+    },
+    "4": {
+      "day": 27,
+      "titles": {
+        "Chefs Table": {
+          "name": "Chefs Table",
+          "season": 2,
+          "year": 2016
+        },
+        "Bloodline": {
+          "name": "Bloodline",
+          "season": 2,
+          "year": 2016
+        },
+        "The Do-Over": {
+          "name": "The Do-Over",
+          "year": 2016
+        }
+      }
+    }
+  }
+}
